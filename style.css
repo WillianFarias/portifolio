@@ -12,10 +12,6 @@ body {
   color: #F6F6F6;
 }
 
-.titulo-destaque {
-  color: #22D4FD;
-}
-
 .container {
   margin: 10rem 15rem;
   display: flex;
@@ -37,6 +33,10 @@ body {
   font-style: normal;
 }
 
+.container__conteudo__titulo-destaque {
+  color: #22D4FD;
+}
+
 .container__conteudo__paragrafo {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
@@ -47,24 +47,36 @@ body {
 
 .container__links {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.container__links__subtitulo {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  size: 24px;
 }
 
 .container__links__link {
-  background-color: #22D4FD;
-  width: 280px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 378px;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 8px;
   font-size: 24px;
   padding: 21.5px 0;
   text-decoration: none;
-  color: #000000;
+  color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  border: 2px solid #22D4FD;
 }
 
-a:hover {
-  background-color: #D3D3D3;
+.container__links__link:hover {
+  cursor: pointer;
+  background-color: #272727;
 }
